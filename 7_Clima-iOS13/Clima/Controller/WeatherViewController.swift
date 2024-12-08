@@ -94,7 +94,7 @@ extension WeatherViewController: WeatherManagerDelegate {
     }
     
     func failedWithError(error: Error){
-         print(error)
+        print(error)
     }
 }
 
