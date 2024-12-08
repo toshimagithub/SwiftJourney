@@ -91,6 +91,9 @@ extension WeatherViewController: WeatherManagerDelegate {
                 background.image = UIImage(named: "dark_background")
             }
         }
+        if let cityName = searchField.text{
+            print("action: serch,city: \(cityName)")
+        }
     }
     
     func failedWithError(error: Error){
