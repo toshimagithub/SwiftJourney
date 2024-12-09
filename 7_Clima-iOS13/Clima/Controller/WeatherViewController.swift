@@ -45,6 +45,7 @@ extension WeatherViewController: UITextFieldDelegate {
         func searchWeather(){
             if let cityName = searchField.text{
                 weatherManager.fetchWeather(cityName)
+                print("action: serch,city: \(cityName)")
             }
         }
         
@@ -91,6 +92,7 @@ extension WeatherViewController: WeatherManagerDelegate {
                 background.image = UIImage(named: "dark_background")
             }
         }
+//        print("action: serch,city: \(weatherModel.cityName)")
     }
     
     func failedWithError(error: Error){
